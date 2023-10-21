@@ -1,0 +1,115 @@
+{
+  "clips" : [
+    {
+      "content" : "hx-target=\"$0\"",
+      "name" : "HTMX target",
+      "scope" : "editor",
+      "syntax" : "html",
+      "trigger" : "hxtarget"
+    },
+    {
+      "content" : "hx-swap=\"outerHTML\"",
+      "name" : "HTMX swap outer",
+      "scope" : "editor",
+      "syntax" : "html",
+      "trigger" : "hx-out"
+    },
+    {
+      "content" : "hx-swap=\"innerHTML\"",
+      "name" : "HTMX swap inner",
+      "scope" : "editor",
+      "syntax" : "html",
+      "trigger" : "hx-out"
+    },
+    {
+      "children" : [
+        {
+          "content" : "hx-get=\"$0\"",
+          "name" : "HTMX get",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxget"
+        },
+        {
+          "content" : "hx-post=\"$0\"",
+          "name" : "HTMX post",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxpost"
+        },
+        {
+          "content" : "hx-put=\"$0\"",
+          "name" : "HTMX put",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxput"
+        },
+        {
+          "content" : "hx-patch=\"$0\"",
+          "name" : "HTMX patch",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxpatch"
+        },
+        {
+          "content" : "hx-delete=\"$0\"",
+          "name" : "HTMX delete",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxdel"
+        }
+      ],
+      "name" : "AJAX"
+    },
+    {
+      "children" : [
+        {
+          "content" : "hx-trigger=\"click\"",
+          "name" : "HTMX click trigger",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxclick"
+        },
+        {
+          "content" : "hx-trigger=\"keydown[key=='${:key}']\"",
+          "name" : "HTMX key trigger",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxkey"
+        },
+        {
+          "content" : "hx-trigger=\"keydown[key=='altKey']\"",
+          "name" : "HTMX alt trigger",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxalt"
+        },
+        {
+          "content" : "hx-trigger=\"keydown[key=='ctrlKey']\"",
+          "name" : "HTMX ctrl trigger",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxctrl"
+        },
+        {
+          "content" : "hx-trigger=\"keydown[key=='shiftKey']\"",
+          "name" : "HTMX shift trigger",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxshift"
+        }
+      ],
+      "name" : "Triggers"
+    },
+    {
+      "content" : "hx-boost=\"true\"",
+      "name" : "hx-boost",
+      "trigger" : "hxboost"
+    },
+    {
+      "content" : "hx-on:$0",
+      "name" : "hx-on",
+      "trigger" : "hxon"
+    }
+  ]
+}
