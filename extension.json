@@ -2,7 +2,10 @@
     "identifier": "teriyaki.HTMXclips",
     "name": "HTMX clips",
     "organization": "Teriyaki",
-    "description": "Lorem ipsum, dolor sit amet.",
+    "description": "Some clips for HTMX",
+    "repository": "https://github.com/TeriyakiBomb/Nova-HTMX-clips",
+    "bugs": "https://github.com/TeriyakiBomb/Nova-HTMX-clips/issues",
+    "funding": "https://ko-fi.com/ashteriyaki",
     "version": "1.0",
     "categories": ["clips"]
 }

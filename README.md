@@ -1,44 +1,32 @@
-<!--
-👋 Hello! As Nova users browse the extensions library, a good README can help them understand what your extension does, how it works, and what setup or configuration it may require.
-
-Not every extension will need every item described below. Use your best judgement when deciding which parts to keep to provide the best experience for your new users.
-
-💡 Quick Tip! As you edit this README template, you can preview your changes by selecting **Extensions → Activate Project as Extension**, opening the Extension Library, and selecting "HTMX clips" in the sidebar.
-
-Let's get started!
--->
-
-<!--
-🎈 Include a brief description of the clips your extension provides. For example:
--->
-**HTMX clips** provides clips for **A Popular Framework**, including the most important feature, something that's really helpful, and _a little-known secret!_
+A selection of basic clips for **HTMX** 🌍
 
 ## Details
 
-<!--
-🎈 To help users get a feel for how clips provided by your extension will work in practice, consider listing them along with any keyboard shortcuts or triggers they use:
--->
+
+Clips follow standard attribute name format for clarity and triggers are named to correspond with the attributes minus hyphens, for example:
 
 | Title         | Description                           | Trigger    |
 | ---           | ---                                   | :-:        |
-| **lipsum-5w** | Inserts 5 words of _Lorem ipsum_      | `lipsum5w` |
-| **lipsum-1p** | Inserts 1 paragraph of _Lorem ipsum_  | `lipsum1p` |
-| **lipsum-5p** | Inserts 5 paragraphs of _Lorem ipsum_ | `lipsum5p` |
+| **hx-boost**  | Inserts hx-boost="true"               | `hxboost`  |
+| **hx-get**    | Inserts hx-get=""                     | `hxget`    |
+| **hx-vals**   | Inserts hx-vals=""                    | `hxvals`   |
 
-<!--
-🎈 If your extension provides too many clips to list, that's okay! Instead, consider providing an overview of what users might expect to find:
--->
+This extension also provides alternates and shorthand for common attributes, for example:
+
+| Title                     | Description                                       | Trigger       |
+| ---                       | ---                                               | :-:           |
+| **hx-swap delete**        | Inserts hx-swap="delete"                          | `hxswapdel`   |
+| **hx-swap none**          | Inserts hx-boost="none"                           | `hxswapnone`  |
+| **hx-trigger click**      | Inserts hx-trigger="click"                        | `hxclick`     |
+| **hx-trigger alt**        | Inserts hx-trigger="keydown[key=='altKey']"       | `hxalt`       |
+
 
 HTMX clips offers clips in the following categories:
 
-- Lorem
-- Ipsum
-- Dolor
-- Sit
-- Amet
+- Core attributes
+- Triggers
+- Additional attributes
 
-<!--
-👋 That's it! Happy developing!
+## Updates
 
-P.S. If you'd like, you can remove these comments before submitting your extension 😉
--->
+There's quite a few, but I don't think there's 100% coverage of all attributes, just the ones I've used + a quick look through the HTMX docs to bulk it out to make it more useful for other people. If there's anything you'd like to see added, feel free to create an issue on the repo
