@@ -1,43 +1,362 @@
 {
   "clips" : [
     {
-     "children" : [
-         {
-           "content" : "hx-get=\"$0\"",
-           "name" : "HTMX get",
-           "scope" : "editor",
-           "syntax" : "html",
-           "trigger" : "hxget"
-         },
-         {
-           "content" : "hx-post=\"$0\"",
-           "name" : "HTMX post",
-           "scope" : "editor",
-           "syntax" : "html",
-           "trigger" : "hxpost"
-         },
-         {
-           "content" : "hx-put=\"$0\"",
-           "name" : "HTMX put",
-           "scope" : "editor",
-           "syntax" : "html",
-           "trigger" : "hxput"
-         },
-         {
-           "content" : "hx-patch=\"$0\"",
-           "name" : "HTMX patch",
-           "scope" : "editor",
-           "syntax" : "html",
-           "trigger" : "hxpatch"
-         },
-         {
-           "content" : "hx-delete=\"$0\"",
-           "name" : "HTMX delete",
-           "scope" : "editor",
-           "syntax" : "html",
-           "trigger" : "hxdel"
-         }
-       ],
-       "name" : "AJAX"
-     }
+      "children" : [
+        {
+          "content" : "hx-boost=\"true\"",
+          "name" : "hx-boost",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxboost"
+        },
+        {
+          "content" : "hx-get=\"$0\"",
+          "name" : "HTMX get",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxget"
+        },
+        {
+          "content" : "hx-post=\"$0\"",
+          "name" : "HTMX post",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxpost"
+        },
+        {
+          "content" : "hx-on:$0",
+          "name" : "hx-on",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxon"
+        },
+        {
+          "content" : "hx-push-url=\"$0\"",
+          "name" : "hx-push",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxpush"
+        },
+        {
+          "content" : "hx-push-url=\"true\"",
+          "name" : "hx-push true",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxpush"
+        },
+        {
+          "content" : "hx-select=\"$0\"",
+          "name" : "hx-select",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxselect"
+        },
+        {
+          "content" : "hx-select-oob=\"$0\"",
+          "name" : "hx-select-oob",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxselect"
+        },
+        {
+          "content" : "hx-swap=\"innerHTML\"",
+          "name" : "hx-swap",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxswap"
+        },
+        {
+          "content" : "hx-swap=\"outerHTML\"",
+          "name" : "hx-swap outer",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxswapout"
+        },
+        {
+          "content" : "hx-swap=\"beforebegin\"",
+          "name" : "hx-swap beforebegin",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxswapbeg"
+        },
+        {
+          "content" : "hx-swap=\"afterbegin\"",
+          "name" : "hx-swap afterbegin",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxswapbeg"
+        },
+        {
+          "content" : "hx-swap=\"beforeend\"",
+          "name" : "hx-swap beforeend",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxswapend"
+        },
+        {
+          "content" : "hx-swap=\"afterend\"",
+          "name" : "hx-swap afterend",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxswapend"
+        },
+        {
+          "content" : "hx-swap=\"delete\"",
+          "name" : "hx-swap delete",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxswapdel"
+        },
+        {
+          "content" : "hx-swap=\"none\"",
+          "name" : "hx-swap none",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxswapnone"
+        },
+        {
+          "content" : "hx-swap-oob=\"$0\"",
+          "name" : "hx-swap-oob",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxswapoob"
+        },
+        {
+          "content" : "hx-swap-oob=\"true\"",
+          "name" : "hx-swap-oob true",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxswapoob"
+        },
+        {
+          "content" : "hx-target=\"$0\"",
+          "name" : "hx-target",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxtarget"
+        },
+        {
+          "content" : "hx-put=\"$0\"",
+          "name" : "hx-put",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxput"
+        },
+        {
+          "content" : "hx-patch=\"$0\"",
+          "name" : "hx-patch",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxpatch"
+        },
+        {
+          "content" : "hx-delete=\"$0\"",
+          "name" : "hx-delete",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxdel"
+        },
+        {
+          "content" : "hx-vals='{$0}'",
+          "name" : "hx-vals",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxvals"
+        }
+      ],
+      "name" : "Core attributes"
+    },
+    {
+      "children" : [
+        {
+          "content" : "hx-trigger=\"click\"",
+          "name" : "hx-trigger click",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxclick"
+        },
+        {
+          "content" : "hx-trigger=\"keydown[key=='${:key}']\"",
+          "name" : "hx-trigger key",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxkey"
+        },
+        {
+          "content" : "hx-trigger=\"keydown[key=='altKey']\"",
+          "name" : "hx-trigger alt",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxalt"
+        },
+        {
+          "content" : "hx-trigger=\"keydown[key=='ctrlKey']\"",
+          "name" : "hx-trigger ctrl",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxctrl"
+        },
+        {
+          "content" : "hx-trigger=\"keydown[key=='shiftKey']\"",
+          "name" : "hx-trigger shift",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxshift"
+        }
+      ],
+      "name" : "Triggers"
+    },
+    {
+      "children" : [
+        {
+          "content" : "hx-confirm=\"$0\"",
+          "name" : "hx-confirm",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxconfirm"
+        },
+        {
+          "content" : "hx-delete=\"$0\"",
+          "name" : "hx-delete",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxdelete"
+        },
+        {
+          "content" : "hx-disable",
+          "name" : "hx-disable",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxdisable"
+        },
+        {
+          "content" : "hx-disabled-elt=\"$0\"",
+          "name" : "hx-disabled-eld",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxdisabled"
+        },
+        {
+          "content" : "hx-disinherit=\"$0\"",
+          "name" : "hx-disinherit ",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxdisinherit"
+        },
+        {
+          "content" : "hx-disinherit=\"*\"",
+          "name" : "hx-disinherit all",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxdisinherit"
+        },
+        {
+          "content" : "hx-disinherit=\"hx-select\"",
+          "name" : "hx-disinherit select",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxdisinheritsel"
+        },
+        {
+          "content" : "hx-disinherit=\"hx-select\"",
+          "name" : "hx-disinherit select",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxdisinheritsel"
+        },
+        {
+          "content" : "hx-disinherit=\"hx-target\"",
+          "name" : "hx-disinherit target",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxdisinherittar"
+        },
+        {
+          "content" : "hx-ext=\"$0\"",
+          "name" : "hx-ext",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxext"
+        },
+        {
+          "content" : "hx-headers='$0'",
+          "name" : "hx-headers",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxheaders"
+        },
+        {
+          "content" : "hx-history=\"false\"",
+          "name" : "hx-history",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxhistory"
+        },
+        {
+          "content" : " hx-history-elt",
+          "name" : " hx-history-elt",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxhistoryelt"
+        },
+        {
+          "content" : "hx-include=\"$0\"",
+          "name" : "hx-include",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxinclude"
+        },
+        {
+          "content" : "hx-indicator=\"$0\"",
+          "name" : "hx-indicator",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxindicator"
+        },
+        {
+          "content" : "hx-params=\"$0\"",
+          "name" : "hx-params",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxparams"
+        },
+        {
+          "content" : "hx-preserve",
+          "name" : "hx-preserve",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxpres"
+        },
+        {
+          "content" : "hx-prompt=\"$0\"",
+          "name" : "hx-prompt",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxprompt"
+        },
+        {
+          "content" : "hx-replace-url=\"$0\"",
+          "name" : "hx-replace-url",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxreplaceurl"
+        },
+        {
+          "content" : "hx-replace-url=\"true\"",
+          "name" : "hx-replace-url true",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxreplaceurl"
+        },
+        {
+          "content" : "hx-request='$0'",
+          "name" : "hx-request",
+          "scope" : "editor",
+          "syntax" : "html",
+          "trigger" : "hxrequest"
+        }
+      ],
+      "name" : "Additional attributes"
+    }
+  ]
 }
